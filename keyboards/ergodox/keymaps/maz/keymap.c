@@ -101,11 +101,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ,--------------------------------------------------.           ,--------------------------------------------------.
  * |        |      |      |      |      |      |      |           |      |      |      |      |      |      |        |
  * |--------+------+------+------+------+-------------|           |------+------+------+------+------+------+--------|
- * |        |      |      | END  |      |      |      |           |      |      | PGUP |      |      |      |        |
+ * |        |      | WORD | END  |      |      |      |           |      |      | PGUP |      |      |      |        |
  * |--------+------+------+------+------+------|      |           |      |------+------+------+------+------+--------|
  * |        | HOME |      |PGDOWN|      |      |------|           |------| LEFT | DOWN |  UP  |RIGHT |      |        |
  * |--------+------+------+------+------+------|      |           |      |------+------+------+------+------+--------|
- * |        |      |      |      |      |      |      |           |      |      |      |      |      |      |        |
+ * |        |      |      |      |      | BACK |      |           |      |      |      |      |      |      |        |
  * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
  *   |      |      |      |      |      |                                       |      |      |      |      |      |
  *   `----------------------------------'                                       `----------------------------------'
@@ -117,15 +117,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                                 |      |      |      |       |      |      |      |
  *                                 `--------------------'       `--------------------'
  */
-// MEDIA AND MOUSE
+// ARROW KEYS AND NAVIGATION
 [ARRW] = KEYMAP(
        // left hand
-       KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS,   KC_TRNS, KC_TRNS, KC_TRNS,
-       KC_TRNS,  KC_TRNS, KC_TRNS, KC_END,    KC_TRNS, KC_TRNS, KC_TRNS,
-       KC_TRNS,  KC_HOME, KC_TRNS, KC_PGDOWN, KC_TRNS, KC_TRNS,
-       KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS,   KC_TRNS, KC_TRNS, KC_TRNS,
-       KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS,   KC_TRNS,
-                                              KC_TRNS, KC_TRNS,
+       KC_TRNS,  KC_TRNS, KC_TRNS,    KC_TRNS,   KC_TRNS, KC_TRNS,    KC_TRNS,
+       KC_TRNS,  KC_TRNS, LALT(KC_F), KC_END,    KC_TRNS, KC_TRNS,    KC_TRNS,
+       KC_TRNS,  KC_HOME, KC_TRNS,    KC_PGDOWN, KC_TRNS, KC_TRNS,
+       KC_TRNS,  KC_TRNS, KC_TRNS,    KC_TRNS,   KC_TRNS, LALT(KC_B), KC_TRNS,
+       KC_TRNS,  KC_TRNS, KC_TRNS,    KC_TRNS,   KC_TRNS,
+                                                 KC_TRNS, KC_TRNS,
                                                        KC_TRNS,
                                      KC_TRNS, KC_TRNS, KC_TRNS,
        // right hand
